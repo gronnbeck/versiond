@@ -9,7 +9,8 @@ development or just abanonned, like many side projects.
 
 ## (Desired) Features
   * [x] Get flattened configuration
-  * [ ] Generate and store a configuration version
+  * [x] Generate and store a configuration version
+  * [ ] Get stored configuration
   * [ ] Support global configs
   * [ ] Support Service Discovery. Not sure if I want to
   support this.
