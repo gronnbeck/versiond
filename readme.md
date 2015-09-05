@@ -16,6 +16,19 @@ development or just abanonned, like many side projects.
   support this.
   * [ ] WebHook trigger when configs has changed
 
+## API
+
+**Peek on current config**
+```
+GET /config/applications/{applicationId}
+```
+
+**Generate and store configuration**
+```
+POST /config/applications/{applicationId}
+```
+
+
 ## Contribute
 
 Download the current repository and install dependencies
