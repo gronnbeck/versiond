@@ -11,6 +11,7 @@ development or just abanonned, like many side projects.
   * [x] Get flattened configuration
   * [x] Generate and store a configuration version
   * [ ] Get stored configuration
+  * [ ] Endpoint for writing to a non-stored configuration
   * [ ] Support global configs
   * [ ] Support Service Discovery. Not sure if I want to
   support this.
