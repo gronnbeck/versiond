@@ -1,0 +1,18 @@
+{
+  "name": "versiond",
+  "version": "0.0.0",
+  "description": "Version controlled centralized configuration backed by etcd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ken Grønnbeck",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1",
+    "node-etcd": "^4.1.0",
+    "tape": "^4.2.0"
+  }
+}
