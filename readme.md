@@ -21,34 +21,90 @@ development or just abanonned, like many side projects.
 
 ## API
 
+We try to be async. So many of our POST and DELETE endpoints cannot
+guarantee that the action was persisted. The client has to double
+using GET to verify that the action was completed.
+
 **Peek on current config**
 ```
+// Request
 GET /v1/env/{env}/applications/{applicationId}
+
+// Response
+{
+  "key1": "value1",
+  "key2": "value2"
+  // ...
+  "keyN": "valueN"
+}
 ```
 
 **Add or update a config**
 ```
+// Request
 POST /v1/env/{env}/applications/{applicationId}
+
+{
+  "key1": "value1",
+  "key2": "value2"
+  // ...
+  "keyN": "valueN"
+}
+
+// Response
+{
+  "id": "applicationId",
+  "status": "creating"
+}
 ```
 
 **Delete current config**
 ```
-DELETE POST /v1/env/{env}/applications/{applicationId}
+// Request
+DELETE /v1/env/{env}/applications/{applicationId}
+
+// Response
+{
+  success: true
+}
+
 ```
 
 **Delete a key inside a config**
 ```
-DELETE POST /v1/env/{env}/applications/{applicationId}/keys/{key}
+// Request
+DELETE /v1/env/{env}/applications/{applicationId}/keys/{key}
+
+// Response
+{
+  success: true
+}
 ```
 
 **Generate and store configuration**
 ```
+// Request
 POST /v1/env/{env}/applications/{applicationId}/generate
+
+// Response
+{
+  "hash": "sha256hash", // can be used to get stored config
+  "status": "creating"
+}
 ```
 
 **Get stored configuration**
 ```
+// Request
 GET /v1/config/stored/{sha256hash}
+
+// Response
+{
+  "key1": "value1",
+  "key2": "value2"
+  // ...
+  "keyN": "valueN"
+}
 ```
 
 
