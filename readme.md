@@ -38,7 +38,7 @@ DELETE POST /v1/env/{env}/applications/{applicationId}
 
 **Delete a key inside a config**
 ```
-DELETE POST /v1/env/{env}/applications/{applicationId}/key/{key}
+DELETE POST /v1/env/{env}/applications/{applicationId}/keys/{key}
 ```
 
 **Generate and store configuration**
