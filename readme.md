@@ -43,7 +43,7 @@ DELETE POST /v1/env/{env}/applications/{applicationId}/key/{key}
 
 **Generate and store configuration**
 ```
-POST /v1/env/{env}/applications/{applicationId}
+POST /v1/env/{env}/applications/{applicationId}/generate
 ```
 
 **Get stored configuration**
