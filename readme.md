@@ -12,11 +12,12 @@ development or just abanonned, like many side projects.
   * [x] Generate and store a configuration version
   * [x] Get stored configuration
   * [x] Support for environment
-  * [ ] Endpoint for writing to a non-stored configuration
+  * [x] Endpoint for writing to a non-stored configuration
   * [ ] Support global configs
-  * [ ] Support Service Discovery. Not sure if I want to
-  support this.
+  * [ ] Support Service Discovery. Not sure if I want to support this.
   * [ ] WebHook trigger when configs has changed
+  * [ ] Should be able to delete configuration that is no longer needed
+  * [ ] Considering if NewConfig is OK for updating as well.
 
 ## API
 
