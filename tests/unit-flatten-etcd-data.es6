@@ -1,10 +1,11 @@
 import test from 'tape';
 import testData from './unit-flatten-etcd-test-data.json';
-import flattenEtcdData from '../lib/flatten-etcd-data';
+import FlattenEtcdData from '../lib/flatten-etcd-data';
 
-test('flatten etcd v2 data as expected', (t) => {
+test('flatten etcd v2 data for appConfig as expected', (t) => {
   t.plan(3);
-  var data = flattenEtcdData(testData);
+  var flatten = new FlattenEtcdData();
+  var data = flatten.parseAppConfig(testData);
 
   t.equal(typeof data, 'object');
   t.notEqual(data.etcdHost, undefined, 'etcdHost should be set');

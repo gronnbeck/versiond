@@ -5,19 +5,19 @@
     "dir": true,
     "nodes": [
       {
-        "key": "/config/applications/testApp/etcdHost",
+        "key": "/env/develop/applications/testApp/etcdHost",
         "value": "http://localhost:4001",
         "modifiedIndex": 12,
         "createdIndex": 12
       },
       {
-        "key": "/config/applications/testApp/environment",
+        "key": "/env/develop/applications/testApp/environment",
         "value": "localtest",
         "modifiedIndex": 13,
         "createdIndex": 13
       },
       {
-        "key": "/config/applications/testApp/tag",
+        "key": "/env/develop/applications/testApp/tag",
         "value": "label",
         "modifiedIndex": 14,
         "createdIndex": 14
