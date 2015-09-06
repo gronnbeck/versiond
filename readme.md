@@ -16,7 +16,7 @@ development or just abanonned, like many side projects.
   * [ ] Support global configs
   * [ ] Support Service Discovery. Not sure if I want to support this.
   * [ ] WebHook trigger when configs has changed
-  * [ ] Should be able to delete configuration that is no longer needed
+  * [x] Should be able to delete configuration that is no longer needed
   * [ ] Considering if NewConfig is OK for updating as well.
 
 ## API
@@ -29,6 +29,16 @@ GET /v1/env/{env}/applications/{applicationId}
 **Add or update a config**
 ```
 POST /v1/env/{env}/applications/{applicationId}
+```
+
+**Delete current config**
+```
+DELETE POST /v1/env/{env}/applications/{applicationId}
+```
+
+**Delete a key inside a config**
+```
+DELETE POST /v1/env/{env}/applications/{applicationId}/key/{key}
 ```
 
 **Generate and store configuration**
