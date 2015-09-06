@@ -110,6 +110,8 @@ GET /v1/config/stored/{sha256hash}
 
 ## Contribute
 
+Prereq: Running etcd instance
+
 Download the current repository and install dependencies
 
 ```sh
