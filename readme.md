@@ -26,6 +26,11 @@ development or just abanonned, like many side projects.
 GET /v1/env/{env}/applications/{applicationId}
 ```
 
+**Add or update a config**
+```
+GET /v1/env/{env}/applications/{applicationId}
+```
+
 **Generate and store configuration**
 ```
 POST /v1/env/{env}/applications/{applicationId}
