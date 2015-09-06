@@ -28,7 +28,7 @@ GET /v1/env/{env}/applications/{applicationId}
 
 **Add or update a config**
 ```
-GET /v1/env/{env}/applications/{applicationId}
+POST /v1/env/{env}/applications/{applicationId}
 ```
 
 **Generate and store configuration**
