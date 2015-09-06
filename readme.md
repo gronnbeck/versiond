@@ -11,6 +11,7 @@ development or just abanonned, like many side projects.
   * [x] Get flattened configuration
   * [x] Generate and store a configuration version
   * [x] Get stored configuration
+  * [x] Support for environment
   * [ ] Endpoint for writing to a non-stored configuration
   * [ ] Support global configs
   * [ ] Support Service Discovery. Not sure if I want to
@@ -21,12 +22,12 @@ development or just abanonned, like many side projects.
 
 **Peek on current config**
 ```
-GET /v1/config/applications/{applicationId}
+GET /v1/env/{env}/applications/{applicationId}
 ```
 
 **Generate and store configuration**
 ```
-POST /v1/config/applications/{applicationId}
+POST /v1/env/{env}/applications/{applicationId}
 ```
 
 **Get stored configuration**
